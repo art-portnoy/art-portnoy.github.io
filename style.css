@@ -1,0 +1,41 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #3498db;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+h1:after{
+    content: "";
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    background: #ecf0f1;
+    transition: width .2s ease;
+}
+
+h1:hover:after{
+    width: 100%;
+}
+
+
+h1:first-letter{
+    text-transform: uppercase;
+}
